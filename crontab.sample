@@ -1,0 +1,6 @@
+# Every 5 min run a sample task
+*/5 * * * * /bin/bash /absolute/path/to/mvp-task-scheduler/cli.sh run-task sample_echo >> /absolute/path/to/mvp-task-scheduler/logs/cron.log 2>&1
+
+# Every hour run the sample workflow
+0 * * * * /bin/bash /absolute/path/to/mvp-task-scheduler/cli.sh run-workflow sample_workflow >> /absolute/path/to/mvp-task-scheduler/logs/cron.log 2>&1
+
